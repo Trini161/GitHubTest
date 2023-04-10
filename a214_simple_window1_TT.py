@@ -31,7 +31,7 @@ ent_username.pack(pady=5)
 #create Password
 lbl_password = tk.Label(frame_login, text='Password:', font = 'Courier')
 lbl_password.pack(padx= 50)
-ent_password = tk.Entry(frame_login, bd=3)
+ent_password = tk.Entry(frame_login, bd=3, show='*')
 ent_password.pack(pady=5)
 
 
