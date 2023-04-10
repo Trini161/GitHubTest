@@ -7,7 +7,7 @@ def test_my_button():
     student_password = ent_password.get()
 
     # Configure the label in frame_auth to display the password
-    lbl_auth = tk.Label(frame_auth,text=student_password, bg="plum4", font = 'Courier')
+    lbl_auth = tk.Label(frame_auth,text=student_password, font = 'Courier')
     lbl_auth.pack(pady=5)
 # main window
 root = tk.Tk()
@@ -21,7 +21,7 @@ frame_auth = tk.Frame(root)
 frame_auth.grid(row=0, column=0, sticky= 'news')
 
 # Add a label to frame_auth
-lbl_auth = tk.Label(frame_auth,text="Authentication", bg="plum4")
+lbl_auth = tk.Label(frame_auth,text="Authentication", font='Courier')
 # frame_auth  = tk.Label(frame_login,text="Username")
 #create Username
 lbl_username = tk.Label(frame_login, text='Username:', font = 'Courier')
