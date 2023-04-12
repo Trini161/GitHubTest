@@ -13,7 +13,20 @@ import matplotlib.pyplot as plt
 def main():
     # Ask for input from the user
     groceries = ["GreenApple", "RedApple", "WaterBottle"]
-    input_item = input("Enter the name of the grocery item from groceries ")
+    def get_input():
+        input_item = input("Enter the name of the grocery item from groceries ")
+        if ("apple" in input_item.lower()):
+            input_item = input("Enter the color of the apple ")
+            if input_item.lower() in groceries:
+                return input_item
+        if input_item.lower() in groceries:
+            
+            return input_item
+        else:
+            print("Please enter a valid item")
+            return get_input()
+        
+    input_item = get_input()
 
     # Check if the user input is in the list of groceries
     if input_item.lower() in groceries:
