@@ -15,12 +15,10 @@ colors = ["blue", "green", "red", "yellow"]
 for row in range(num_rows):
     for col in range(num_cols):
         # Create a canvas widget as a box
-        # make blue and red boxes bigger
         if colors[row * num_cols + col] in ["blue", "red"]:
             box = tk.Canvas(root, width=100, height=100, bg=colors[row * num_cols + col])
         else:
             box = tk.Canvas(root, width=50, height=100, bg=colors[row * num_cols + col])
-
         # Place the box in the grid with no padding or spacing
         box.grid(row=row, column=col, padx=0, pady=0)
 
