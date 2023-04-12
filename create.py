@@ -10,14 +10,13 @@ def get_input():
     for item in groceries:
         print("- " + item)
     input_item = input("Enter the name of the grocery item: ")
-    if ("apple" in input_item.lower()):
+    
+    if input_item in groceries:
+        return input_item
+    elif ("apple" in input_item.lower()):
         # If the user entered "apple", prompt for the color
         input_item = input("Enter the color of the apple: ")
         input_item = input_item.capitalize() + "Apple"
-    else:
-        input_item = input_item.capitalize()
-    if input_item in groceries:
-        return input_item
     else:
         print("Invalid item.")
         return get_input()
