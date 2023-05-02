@@ -6,12 +6,12 @@ numMissingTeeth = "0"
 MissingTooth = "null"
 print("Welcome to the Dentist Office")
 
-numTeeth = input("How many teeth do you have ")
-if numTeeth == "32":
+numTeeth = int(input("How many teeth do you have? "))
+if numTeeth == 32:
     print("You have a full set of teeth for an adult")
-elif numTeeth == "20":
+elif numTeeth == 20:
         print("You have a full set of teeth for a child")
-elif numTeeth > "32" or numTeeth < "0":
+elif numTeeth > 32 or numTeeth < 0:
     print("Invalid number of teeth")
     numTeeth = input("How many teeth do you have ")
 else :
@@ -19,7 +19,7 @@ else :
      numMissingTeeth = str(32 - int(numTeeth))
      # Ask the user what tooth they are missing
      print(AllTeethNames)
-     MissingTooth = input( "What tooth are you missing ").lower()
+     MissingTooth = input( "What tooth are you missing? ").lower()
 
 
   
