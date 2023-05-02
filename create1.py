@@ -27,7 +27,7 @@ def getTeeth():
 
   
 
-def procedure(AllTeethNames):
+def procedure():
     for i in AllTeethNames:
         if i == MissingTooth:
             print("You are missing the " + i)
@@ -39,4 +39,4 @@ def procedure(AllTeethNames):
     
     
 getTeeth()
-procedure(AllTeethNames)
+procedure()
