@@ -16,10 +16,10 @@ def getTeeth():
             print("You have a full set of teeth for a child")
     elif numTeeth > 32 or numTeeth < 0:
         print("Invalid number of teeth")
-        numTeeth = input("How many teeth do you have ")
+        getTeeth()
     else :
-        print("you are missing " + str(32 - int(numTeeth)) + " teeth")
         numMissingTeeth = str(32 - int(numTeeth))
+        print("you are missing " + numMissingTeeth + " teeth")
         # Ask the user what tooth they are missing
         print(AllTeethNames)
         MissingTooth = input( "What tooth are you missing? ").lower()
@@ -27,16 +27,16 @@ def getTeeth():
 
   
 
-def procedure():
+def procedure(AllTeethNames):
     for i in AllTeethNames:
         if i == MissingTooth:
             print("You are missing the " + i)
             implant = input("Would you like a " + i + " implant? Yes or No ").lower()
             return implant
-
+procedure(AllTeethNames)
 if implant == "yes":
     print("It will cost $500")
-
+    
     
 getTeeth()
 procedure(AllTeethNames)
