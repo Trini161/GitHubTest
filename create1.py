@@ -32,10 +32,10 @@ def procedure(AllTeethNames):
         if i == MissingTooth:
             print("You are missing the " + i)
             implant = input("Would you like a " + i + " implant? Yes or No ").lower()
-            return implant
-procedure(AllTeethNames)
-if implant == "yes":
-    print("It will cost $500")
+
+
+    if implant == "yes":
+        print("It will cost $500")
     
     
 getTeeth()
