@@ -20,9 +20,7 @@ else :
      # Ask the user what tooth they are missing
      print(AllTeethNames)
      MissingTooth = input( "What tooth are you missing ").lower()
-    break
-except ValueError:
-    print("Invalid input. Please enter a valid number.")
+
 
     
 def procedure(AllTeethNames):
