@@ -22,7 +22,7 @@ else :
      MissingTooth = input( "What tooth are you missing ").lower()
 
 
-    
+  
 def procedure(AllTeethNames):
     for i in AllTeethNames:
         if i == MissingTooth:
