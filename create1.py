@@ -5,6 +5,7 @@ AllTeethNames = ["left central incisor", "left lateral incisor", "left canine", 
 # Welcome the user to the Dentist Office
 numMissingTeeth = "0"
 MissingTooth = "null"
+implant = "null"
 print("Welcome to the Dentist Office")
 
 def getTeeth():
