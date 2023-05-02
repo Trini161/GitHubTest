@@ -16,7 +16,7 @@ def get_input():
     elif ("apple" in input_item.lower()):
         # If the user entered "apple", prompt for the color
         input_item = input("Enter the color of the apple: ")
-        input_item = input_item.capitalize() + "Apple"
+        input_item = input_item.lower().capitalize() + "Apple"
     else:
         print("Invalid item.")
         return get_input()
